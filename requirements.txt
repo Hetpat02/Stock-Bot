@@ -1,0 +1,17 @@
+phidata
+python-dotenv
+yfinance
+packaging
+duckduckgo-search
+fastapi
+uvicorn
+groq
+openai
+pip
+argparse
+distro
+cryptography
+pillow
+fonttools
+langchain-openai
+ollama
