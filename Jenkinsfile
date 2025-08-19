@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        AWS_REGION = 'us-east-1'
+        AWS_REGION = 'us-east-2'
         ECR_REPO = 'my-repo'
         IMAGE_TAG = 'latest'
         SERVICE_NAME = 'llmops-stock-bot'
