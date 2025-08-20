@@ -122,25 +122,9 @@ full analysis is being generated
 raw.githubusercontent.com
 .
 The diagram below summarises these components:
-┌─────────────────┐     selects      ┌─────────────────────┐
-│  User (UI)      │ ───────────────▷│  Language model     │
-│  (Streamlit)    │                 │  (Ollama/OpenAI/Groq)│
-└─────────────────┘                 └────────────▲─────────┘
-               │                                   │
-        initialises                          supplies context
-               ▼                                   ▼
-        ┌──────────────┐                  ┌──────────────────┐
-        │  Web agent   │  ───────────────▷│  Finance agent   │
-        │ (DuckDuckGo) │                  │ (YFinanceTools)  │
-        └──────────────┘                  └──────────────────┘
-               │                                    ▲
-               │        coordinates results          │
-               └──────────────────────────────┬──────┘
-                                              │
-                                       ┌───────────────┐
-                                       │  Multi‑agent   │
-                                       │  coordinator   │
-                                       └───────────────┘
+
+<img width="691" height="495" alt="Screenshot 2025-08-20 at 7 05 08 PM" src="https://github.com/user-attachments/assets/8e9a70a0-3f33-4cc1-a3e4-2465cc63cfcd" />
+
 Project structure
 ├── main.py            # Streamlit entry point and chat UI:contentReference[oaicite:22]{index=22}
 ├── financial_agent.py # Defines web, finance and coordinator agents:contentReference[oaicite:23]{index=23}
